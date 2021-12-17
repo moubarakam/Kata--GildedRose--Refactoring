@@ -1,15 +1,23 @@
-const {Shop, Item} = require("../src/gilded_rose");
+const {
+  Shop, 
+  Item, 
+  SulfurasItem,
+  BackstageItem,
+  ElixirItem,
+  AgedBrieItem,
+  DexterityVestItem
+} = require("../src/gilded_rose");
 
 const items = [
-  new Item("+5 Dexterity Vest", 10, 20),
-  new Item("Aged Brie", 2, 0),
-  new Item("Aged Brie", 2, 49),
-  new Item("Elixir of the Mongoose", 5, 7),
-  new Item("Sulfuras, Hand of Ragnaros", 0, 80),
-  new Item("Sulfuras, Hand of Ragnaros", -1, 80),
-  new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20),
-  new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
-  new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
+  new DexterityVestItem(10, 20),
+  new AgedBrieItem(2, 0),
+  new AgedBrieItem(2, 49),
+  new ElixirItem(5, 7),
+  new SulfurasItem(),
+  new SulfurasItem(),
+  new BackstageItem(15, 20),
+  new BackstageItem(10, 49),
+  new BackstageItem(5, 49),
 
   // This Conjured item does not work properly yet
   new Item("Conjured Mana Cake", 3, 6),
@@ -25,9 +33,21 @@ describe("Gilded Rose Refactoring ##############################################
     
     for (let day = 0; day < days; day++) {
       shopBehaviour.push(cloneBehavior);
-      gildedRose.updateQuality();
+      gildedRose.updateItem();
     }
 
     expect(shopBehaviour).toMatchSnapshot();
   });
+
+  it("sellIn should be 999999", function() {
+    // Given
+    const gildedRose = new Shop([new SulfurasItem()]);
+
+    // When
+    const itemSulfura = gildedRose.updateItem();
+
+    // Then
+    expect(itemSulfura[0].sellIn).toBe(999999);
+  });
+
 });

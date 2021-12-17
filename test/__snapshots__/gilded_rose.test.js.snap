@@ -26,12 +26,12 @@ Array [
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": 0,
+      "sellIn": 999999,
     },
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": -1,
+      "sellIn": 999999,
     },
     Object {
       "name": "Backstage passes to a TAFKAL80ETC concert",
@@ -78,12 +78,12 @@ Array [
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": 0,
+      "sellIn": 999999,
     },
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": -1,
+      "sellIn": 999999,
     },
     Object {
       "name": "Backstage passes to a TAFKAL80ETC concert",
@@ -130,12 +130,12 @@ Array [
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": 0,
+      "sellIn": 999999,
     },
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": -1,
+      "sellIn": 999999,
     },
     Object {
       "name": "Backstage passes to a TAFKAL80ETC concert",
@@ -182,12 +182,12 @@ Array [
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": 0,
+      "sellIn": 999999,
     },
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": -1,
+      "sellIn": 999999,
     },
     Object {
       "name": "Backstage passes to a TAFKAL80ETC concert",
@@ -234,12 +234,12 @@ Array [
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": 0,
+      "sellIn": 999999,
     },
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": -1,
+      "sellIn": 999999,
     },
     Object {
       "name": "Backstage passes to a TAFKAL80ETC concert",
@@ -286,12 +286,12 @@ Array [
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": 0,
+      "sellIn": 999999,
     },
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": -1,
+      "sellIn": 999999,
     },
     Object {
       "name": "Backstage passes to a TAFKAL80ETC concert",
@@ -338,12 +338,12 @@ Array [
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": 0,
+      "sellIn": 999999,
     },
     Object {
       "name": "Sulfuras, Hand of Ragnaros",
       "quality": 80,
-      "sellIn": -1,
+      "sellIn": 999999,
     },
     Object {
       "name": "Backstage passes to a TAFKAL80ETC concert",
