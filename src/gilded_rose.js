@@ -52,8 +52,8 @@ class AgedBrieItem extends Item{
   }
   updateItem(){
     this.sellIn -= 1;
-    if (this.sellIn <= 0) this.quality = Math.min(this.quality + 2, this.MAX_QUALITY);
-    else this.quality = Math.min(this.quality + 1, this.MAX_QUALITY);
+    if (this.sellIn <= 0) this.quality = Math.min(this.quality + 2, MAX_QUALITY);
+    else this.quality = Math.min(this.quality + 1, MAX_QUALITY);
   }
 }
 
@@ -90,4 +90,4 @@ module.exports = {
   ElixirItem,
   AgedBrieItem,
   DexterityVestItem
-}
+};
