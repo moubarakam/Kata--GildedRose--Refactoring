@@ -166,7 +166,7 @@ describe("Gilded Rose tests unitaires ##########################################
   describe("ElixirItem", function () {
     it("should decrease the sellIn of the object", function () {
       // Arrange
-      const gildedRose = new Shop([new ElixirItem("Elixir of the Mongoose",9, 4)]);
+      const gildedRose = new Shop([new ElixirItem(9, 4)]);
 
       // Act
       const itemElixir = gildedRose.updateItem();
@@ -176,7 +176,7 @@ describe("Gilded Rose tests unitaires ##########################################
     });
     it("should set a negative sell by date when it has passede has passed", function () {
       // Arrange
-      const gildedRose = new Shop([new ElixirItem("Elixir of the Mongoose",0, 5)]);
+      const gildedRose = new Shop([new ElixirItem(0,5)]);
 
       // Act
       const itemElixir = gildedRose.updateItem();
@@ -186,7 +186,7 @@ describe("Gilded Rose tests unitaires ##########################################
     });
     it("decrease the quality after update", function () {
       // Arrange
-      const gildedRose = new Shop([new ElixirItem("Elixir of the Mongoose",10, 5)]);
+      const gildedRose = new Shop([new ElixirItem(10, 5)]);
 
       // Act
       const itemElixir = gildedRose.updateItem();
@@ -196,7 +196,7 @@ describe("Gilded Rose tests unitaires ##########################################
     });
     it("should decrease the quality by 2 if the sell by date has passed", function () {
       // Arrange
-      const gildedRose = new Shop([new ElixirItem("Elixir of the Mongoose",0, 5)]);
+      const gildedRose = new Shop([new ElixirItem(0, 5)]);
 
       // Act
       const itemElixir = gildedRose.updateItem();
@@ -206,7 +206,7 @@ describe("Gilded Rose tests unitaires ##########################################
     });
     it("should always have a positive quality", function () {
       // Arrange
-      const gildedRose = new Shop([new ElixirItem("Elixir of the Mongoose",0, 0)]);
+      const gildedRose = new Shop([new ElixirItem(0, 0)]);
 
       // Act
       const itemElixir = gildedRose.updateItem();
